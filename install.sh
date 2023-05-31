@@ -1,6 +1,6 @@
 #!/bin/sh
 sed -i '/m0eak_feeds/d' /etc/opkg/customfeeds.conf
-echo "src/gz m0eak_feeds https://raw.githubusercontent.com/m0eak/Openwrt_Packages/tree/master/AXT1800" >>/etc/opkg/customfeeds.conf
+echo "src/gz m0eak_feeds https://raw.githubusercontent.com/bombvillIan/Openwrt_Packages/main/AXT1800/Packages.gz" >>/etc/opkg/customfeeds.conf
 opkg update
 action="$1"
 case "${action}" in
